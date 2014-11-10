@@ -1,20 +1,32 @@
-# Chapter 1. Markdown flavors and Automation.
+# Chapter 1. Markdown flavors and Automation; Curly-Pound-Label. {#link1-chap1hdr}
 
-## Markdown at LeanPub.
+## Markdown at LeanPub. Level 2 header.
+
+// MAKE ref to Non-Test => Curly + id= + Quoted-LABEL
+//where Named title is Bang-SquareTitle-RoundPath
+{id="cat-picture"}
+![A picture of a cat](images/cat.jpg)
+OR 
+//code block 
+{id='something-amazing',line-numbers=off,lang=ruby}
+~~~~~~
+def  mycode here end
+~~~~~~
+
 
 It appears LeanPub uses a slightly non-standard markdown. I do not recall the original DaringFireball having its prefix items.
-
 - Does it have G for generic box?
 - Does it have Curly code? 
 
-1.Make a Reference;  this[^01-foo], where Caret is required and Foo is a unique value BUT periods are Barred; 1A.Tell the referenced info , footnote content later in the text, using the same tag, with a \ colon and a space: 
-This is Square-bracket, Pound, ID, [#01-foo]: This is the footnote content.
+1.Make a Reference;  put the special curly-pound-label **before** the sentence of interest, on its own line
+
+{#link3-foo-mytitle}
+ this link3-foo-mytitle above , where Caret is required and Foo is a unique value BUT periods are Barred; 
+
 
 Here we will show a code block, aka  a recipe. and it has an id.
 
-[#ch01-ex12-ruby-init]  That was my 2nd ID
-
-{title="Example 12: Creating a class in Ruby", lang=ruby, linenos=off}
+{id='link2-ch01-ruby-code', line-numbers=on, title="Example 12: Creating a class in Ruby", lang=ruby, linenos=off}
 ~~~~~~~
 class Book
   def initialize(title)
@@ -26,15 +38,23 @@ end
 OK, also let's ensure we can link to something. 
 It does NOT work to just type a URL inline, and it doesn't matter if it is on its own line.
 
-http://leanpub.com
-
 Using non-standard brackets, ie no html a-ref. <http://leanpub.com> , works great.
+Does a normal href work? <a 'here is title of a page link'> http://leanpub.com</a href>
+
 Also there is an ability to give a title to the link : (This is the bc-leanpub repo)<https://github.com/AnneTheAgile/bc-leanpub>
 
 Make this monospace; `We will see.`
 OK that's enough.
 
+USE REF=> Square/title + RoundParens/Pound-LABEL
 
-Even here, should be able to reference those ID's. Curly, Pound, ID: {#ch01-ex12-ruby-init}
-and {#01-foo}
+Even here, should be able to reference those ID's. Curly, Pound, ID:
+[link2 ruby code](#link2-ch01-ruby-code}
+[link1 chapter header](#link1-chap1hdr)
+[link3 my foo title, just a sentence ](#link3-foo-mytitle)
 Done!
+
+1A.Use the referenced info , eg footnote content later in the text, using the same tag, 
+NOT with a \ colon and a space: 
+rather use the 'usual' square-title round-pound-label.
+This is Square-bracket, Pound, ID, [again foo-mytitle](#link3-foo-mytitle): This is the footnote content.

@@ -2,14 +2,10 @@
 
 We have these references; 
 
-{#ch01-ex12-ruby-init}
+[link2 ruby code](#link2-ch01-ruby-code}
+[link1 chapter header](#link1-chap1hdr)
+[link3 my foo title, just a sentence ](#link3-foo-mytitle)
 
-Try that above with square not parens. 
-
-{#ch01-ex12-ruby-init}
-
-The other one was; {#01-foo}
-Those above are using CURLY POUND ID, the proper way to reference. 
 
 Now ending text.
 
