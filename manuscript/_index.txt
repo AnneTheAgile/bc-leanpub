@@ -2,12 +2,14 @@
 
 We have these references; 
 
-(#ch01-ex12-ruby-init)
+{#ch01-ex12-ruby-init}
 
 Try that above with square not parens. 
 
-[#ch01-ex12-ruby-init]
+{#ch01-ex12-ruby-init}
 
+The other one was; {#01-foo}
+Those above are using CURLY POUND ID, the proper way to reference. 
 
 Now ending text.
 
