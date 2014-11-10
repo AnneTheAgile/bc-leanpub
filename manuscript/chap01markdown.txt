@@ -7,6 +7,9 @@ It appears LeanPub uses a slightly non-standard markdown. I do not recall the or
 - Does it have G for generic box?
 - Does it have Curly code? 
 
+1.Make a Reference;  this[^01-foo], where Caret is required and Foo is a unique value BUT periods are Barred; 1A.Tell the referenced info , footnote content later in the text, using the same tag, with a \ colon and a space: 
+[^01-foo]: This is the footnote content.
+
 Here we will show a code block, aka  a recipe. and it has an id.
 
 {#ch01-ex12-ruby-init}
@@ -20,11 +23,13 @@ class Book
 end
 ~~~~~~~
 
-OK, also let's ensure we can link to something. Is this live?  http://leanpub.com
-Or does it need to be on its own line to be live? 
+OK, also let's ensure we can link to something. 
+It does NOT work to just type a URL inline, and it doesn't matter if it is on its own line.
+
 http://leanpub.com
 
-Or perhaps it needs non-standard brackets, ie no html a-ref. <http://leanpub.com>
+Using non-standard brackets, ie no html a-ref. <http://leanpub.com> , works great.
+Also there is an ability to give a title to the link : (This is the bc-leanpub repo)<https://github.com/AnneTheAgile/bc-leanpub>
 
 Make this monospace; `We will see.`
 OK that's enough.

@@ -1,7 +1,24 @@
-Here is the place for all good copyrights.
+Here is the place for all good copyrights, or rather not really, it's a place for Thank you World!
+The "G" symbol makes warnings, not global boxes. E for Error, T for Tip, W for Warning , X for Exercise, A for aside, D for FAQ.
 
-G> MIT Copyright
-G>
-G> It is allows some business use.
+T> TIP?? MIT Copyright
+T>
+T> It is allows some business use.
 
-Copyright 2014.
+For fun ...
+
+A> Able was I ere I saw Elba... aside.
+
+X> ## This exercise should be easy to do.
+X> 
+X> Say hello to the day.
+
+Now we'll try a few more. 
+
+X> Another exercise without a title.
+
+DEFN: 
+
+D> ## What is a Copyright 2014.
+D>
+D> It is a license to use created material.

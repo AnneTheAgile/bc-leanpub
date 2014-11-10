@@ -1,7 +1,18 @@
-## This is an Index with Header level 2.
+# This is an Index with Header level 1, otherwise level 2 is not on another page.
 
 We have these references; 
 
 (#ch01-ex12-ruby-init)
 
+Try that above with square not parens. 
+
+[#ch01-ex12-ruby-init]
+
+
 Now ending text.
+
+[^01-foo] This is the footnote we had before.
+
+Now on its own line.
+
+[^01-foo]
