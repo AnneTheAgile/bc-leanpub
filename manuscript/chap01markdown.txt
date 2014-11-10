@@ -1,0 +1,32 @@
+# Chapter 1. Markdown flavors and Automation.
+
+## Markdown at LeanPub.
+
+It appears LeanPub uses a slightly non-standard markdown. I do not recall the original DaringFireball having its prefix items.
+
+- Does it have G for generic box?
+- Does it have Curly code? 
+
+Here we will show a code block, aka  a recipe. and it has an id.
+
+{#ch01-ex12-ruby-init}
+
+{title="Example 12: Creating a class in Ruby", lang=ruby, linenos=off}
+~~~~~~~
+class Book
+  def initialize(title)
+    @title = title 
+  end 
+end
+~~~~~~~
+
+OK, also let's ensure we can link to something. Is this live?  http://leanpub.com
+Or does it need to be on its own line to be live? 
+http://leanpub.com
+
+Or perhaps it needs non-standard brackets, ie no html a-ref. <http://leanpub.com>
+
+Make this monospace; `We will see.`
+OK that's enough.
+
+

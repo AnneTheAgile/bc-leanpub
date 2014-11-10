@@ -1,0 +1,7 @@
+## This is an Index with Header level 2.
+
+We have these references; 
+
+(#ch01-ex12-ruby-init)
+
+Now ending text.
