@@ -1,0 +1,5 @@
+Asof 2014-11-09Sun.22:08:36
+[] URL cross links are not working at all for non-text, ie 1.code, 2.image
+[] get foss image; subfolder images vs path of manuscript?
+
+[] URL the way I dislike but sometimes may need, no url and only title, is not working. 

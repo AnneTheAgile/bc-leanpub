@@ -4,11 +4,11 @@
 
 // MAKE ref to Non-Test => Curly + id= + Quoted-LABEL
 //where Named title is Bang-SquareTitle-RoundPath
-{id="cat-picture"}
+{id="link4-cat"}
 ![A picture of a cat](images/cat.jpg)
 OR 
 //code block 
-{id='something-amazing',line-numbers=off,lang=ruby}
+{id='link5-amazing',line-numbers=off,lang=ruby}
 ~~~~~~
 def  mycode here end
 ~~~~~~
@@ -25,8 +25,9 @@ It appears LeanPub uses a slightly non-standard markdown. I do not recall the or
 
 
 Here we will show a code block, aka  a recipe. and it has an id.
+Hmm line-nos vs line-numbers, unclear which is the one we need.
 
-{id='link2-ch01-ruby-code', line-numbers=on, title="Example 12: Creating a class in Ruby", lang=ruby, linenos=off}
+{id='link2-ch01-ruby-code', title="Example 12: Creating a class in Ruby", lang=ruby, linenos=on}
 ~~~~~~~
 class Book
   def initialize(title)
@@ -39,19 +40,22 @@ OK, also let's ensure we can link to something.
 It does NOT work to just type a URL inline, and it doesn't matter if it is on its own line.
 
 Using non-standard brackets, ie no html a-ref. <http://leanpub.com> , works great.
-Does a normal href work? <a 'here is title of a page link'> http://leanpub.com</a href>
+Fails, this normal href , just see it spelled out; <a 'here is title of a page link'> http://leanpub.com</a href>
 
 Also there is an ability to give a title to the link : (This is the bc-leanpub repo)<https://github.com/AnneTheAgile/bc-leanpub>
+Retry that with Square not Round for title;  [Try2 bc-leanpub repo]<https://github.com/AnneTheAgile/bc-leanpub>
+Retry3 with Square title plus extra round around angles;  [Try2 bc-leanpub repo](<https://github.com/AnneTheAgile/bc-leanpub>)
 
-Make this monospace; `We will see.`
+Make this monospace; `We will see.` That worked great.
 OK that's enough.
 
 USE REF=> Square/title + RoundParens/Pound-LABEL
 
 Even here, should be able to reference those ID's. Curly, Pound, ID:
-[link2 ruby code](#link2-ch01-ruby-code}
-[link1 chapter header](#link1-chap1hdr)
-[link3 my foo title, just a sentence ](#link3-foo-mytitle)
+Unordered list is Asterisk.
+* first; [link2 ruby code](#link2-ch01-ruby-code}
+* second; [link1 chapter header](#link1-chap1hdr)
+* third; [link3 my foo title, just a sentence ](#link3-foo-mytitle)
 Done!
 
 1A.Use the referenced info , eg footnote content later in the text, using the same tag, 
